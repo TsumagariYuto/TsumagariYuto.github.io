@@ -2,61 +2,108 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TUNEMAGARI's page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    
-    </head>
+</head>
 <body>
 
     <header>
-        <h1>TUNEMAGARI's page</h1>
+        <a href="#top" class="logo">TUNEMAGARI</a>
         <nav>
             <ul>
-                <li><a href="#about">自己紹介</a></li>
-                <li><a href="#works">制作物</a></li>
-                <li><a href="#contact">コンタクト</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#hobby">Hobby</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <p>ようこそ！</p>
-        <p>これは私の自己紹介と学習のアウトプットを兼ねたページです。</p>
+        <section id="top" class="hero">
+            <p class="hero-greeting">Welcome to my page</p>
+            <h1 class="hero-title">TUNEMAGARI<span class="hero-dot">.</span></h1>
+            <p class="hero-sub">福岡県在住の大学院生 / フロントエンドに興味があります</p>
+            <p class="hero-lead">このページは、私 TUNEMAGARI の自己紹介と制作物を紹介するためのものです。ぜひご覧ください。</p>
+            <div class="hero-actions">
+                <a href="#about" class="btn btn-primary">自己紹介を見る</a>
+                <a href="#contact" class="btn btn-ghost">コンタクト</a>
+            </div>
+        </section>
 
         <section id="about">
+            <p class="eyebrow">01 — About</p>
             <h2>自己紹介</h2>
-            <h3>TUNEMAGARI</h3>
-            <p>福岡県在住の大学院生です！特にフロントエンド技術に興味があります。趣味は車の運転と洗車です。よろしくお願いします！</p>
+            <div class="about-card">
+                <h3>TUNEMAGARI<span class="ruby">（つねまがり）</span></h3>
+                <p>福岡県在住の大学院生です。特にフロントエンド技術に興味があります。趣味は車の運転と洗車です。よろしくお願いします。</p>
+                <ul class="meta-list">
+                    <li><span>Location</span>福岡県</li>
+                    <li><span>Status</span>大学院生</li>
+                    <li><span>Interest</span>Frontend Development</li>
+                </ul>
+            </div>
         </section>
 
         <section id="hobby">
+            <p class="eyebrow">02 — Hobby</p>
             <h2>趣味</h2>
-            <ul>
-                <li>音楽を聞くこと（好きなアーティストはMr.children L'Arc〜en〜CielやKpopも聴きます）</li>
-                <li>散歩</li>
-                <li>車の運転・洗車</li>
-                <li>旅行</li>
-            </ul>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Music</h3>
+                    <p>Mr.Children、L'Arc〜en〜Ciel、K-POP などジャンルを問わず聴きます。</p>
+                </div>
+                <div class="card">
+                    <h3>Walking</h3>
+                    <p>気分転換に散歩するのが好きです。</p>
+                </div>
+                <div class="card">
+                    <h3>Driving &amp; Car wash</h3>
+                    <p>車の運転と洗車。愛車を綺麗に保つ時間がリフレッシュになります。</p>
+                </div>
+                <div class="card">
+                    <h3>Travel</h3>
+                    <p>新しい場所を訪れて、その土地の空気を感じるのが好きです。</p>
+                </div>
+            </div>
         </section>
 
         <section id="works">
+            <p class="eyebrow">03 — Works</p>
             <h2>制作物</h2>
-            <p>現在、個人開発の制作物を準備中です。</p>
-            <p>研究室の活動として、以下のプロジェクトに取り組んでいます。</p>
-            <p>デマンド交通運行管理システム（公開予定なし）</p>
-            <h2>ブログ</h2>
-            <ul>
-                <li><a href="https://tunemagari-kun.hatenablog.com/">とあるつねまがりのブログ</a></li>
-            </ul>
+            <p class="lead">現在、個人開発の制作物を準備中です。研究室の活動として以下のプロジェクトに取り組んでいます。</p>
+            <div class="work-item">
+                <div class="work-tag">研究室プロジェクト</div>
+                <h3>デマンド交通運行管理システム</h3>
+                <p class="work-note">公開予定なし</p>
+            </div>
+        </section>
 
-            </section>
+        <section id="blog">
+            <p class="eyebrow">04 — Blog</p>
+            <h2>ブログ</h2>
+            <p class="lead">日々の学びや雑感を綴っています。</p>
+            <a class="link-card" href="https://tunemagari-kun.hatenablog.com/" target="_blank" rel="noopener noreferrer">
+                <span class="link-card-label">Hatena Blog</span>
+                <span class="link-card-title">とあるつねまがりのブログ</span>
+                <span class="link-card-arrow" aria-hidden="true">↗</span>
+            </a>
+        </section>
 
         <section id="contact">
+            <p class="eyebrow">05 — Contact</p>
             <h2>コンタクト</h2>
-            <p>ご連絡は以下のメールアドレスからお願いします。</p>
-            <ul>
-                <li>Email: k25gjk08@st.kyusan-u.ac.jp</li>
-            </ul>
+            <p class="lead">ご連絡は以下のメールアドレスからお願いします。</p>
+            <a class="contact-link" href="mailto:k25gjk08@st.kyusan-u.ac.jp">
+                <span class="contact-label">Email</span>
+                <span class="contact-value">k25gjk08@st.kyusan-u.ac.jp</span>
+                <span class="contact-arrow" aria-hidden="true">→</span>
+            </a>
         </section>
 
     </main>
@@ -64,6 +111,6 @@
     <footer>
         <p>&copy; 2025 TUNEMAGARI</p>
     </footer>
-    
+
 </body>
 </html>
