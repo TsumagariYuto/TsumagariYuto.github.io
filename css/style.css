@@ -361,9 +361,24 @@ h3 {
 }
 
 .work-note {
-    font-size: 0.85rem;
-    color: var(--text-mute);
-    margin: 0;
+    font-size: 0.9rem;
+    color: var(--text-sub);
+    margin: 0 0 20px;
+}
+
+.work-papers {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.work-papers .link-card {
+    padding: 18px 22px;
+}
+
+.work-papers .link-card-title {
+    font-size: 0.92rem;
+    line-height: 1.5;
 }
 
 /* ===== Link Card (Blog) ===== */
